@@ -1,0 +1,49 @@
+.env
+__pycache__/
+*.pyc
+node_modules/
+dist/
+*.log
+.DS_Store
+postgres_dl/
+pgdata/
+scripts/train.log
+@'
+
+# Python virtual environments
+.venv/
+venv/
+backend/.venv/
+
+# Environment secrets
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Frontend and deployment
+.vercel/
+
+# Python build/cache
+__pycache__/
+*.py[cod]
+'@ | Add-Content .gitignore
+@'
+
+# Large local datasets
+data/raw/
+data/processed/
+
+# Email test files
+scripts/received_mail.txt
+scripts/smtp_flow*.py
+scripts/smtp_sink.py
+'@ | Add-Content .gitignore
+
+git rm --cached --ignore-unmatch data/raw/FakeNews.csv data/raw/TrueNews.csv data/processed/combined_clean.csv
+
+git add .gitignore
+# Ignore local datasets
+/data/raw/
+/data/processed/

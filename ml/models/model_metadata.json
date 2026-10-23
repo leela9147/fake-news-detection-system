@@ -1,0 +1,9 @@
+{
+  "model_name": "LinearSVM",
+  "label_names": {
+    "0": "REAL",
+    "1": "FAKE"
+  },
+  "features": "title + \" ||| \" + text (TF-IDF 1-2 grams)",
+  "seed": 42
+}

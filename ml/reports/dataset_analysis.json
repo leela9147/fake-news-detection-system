@@ -1,0 +1,80 @@
+{
+  "fake": {
+    "rows": 23481,
+    "columns": [
+      "title",
+      "text",
+      "subject",
+      "date",
+      "label",
+      "label_name",
+      "source_file"
+    ],
+    "missing": {
+      "title": 0,
+      "text": 0,
+      "subject": 0,
+      "date": 0,
+      "label": 0,
+      "label_name": 0,
+      "source_file": 0
+    },
+    "duplicate_titles": 5578,
+    "duplicate_texts": 6026,
+    "subjects": {
+      "News": 9050,
+      "politics": 6841,
+      "left-news": 4459,
+      "Government News": 1570,
+      "US_News": 783,
+      "Middle-east": 778
+    },
+    "title_len_mean": 94.19803245176952,
+    "text_len_mean": 2547.396235254035,
+    "title_len_median": 90.0,
+    "text_len_median": 2166.0
+  },
+  "real": {
+    "rows": 21417,
+    "columns": [
+      "title",
+      "text",
+      "subject",
+      "date",
+      "label",
+      "label_name",
+      "source_file"
+    ],
+    "missing": {
+      "title": 0,
+      "text": 0,
+      "subject": 0,
+      "date": 0,
+      "label": 0,
+      "label_name": 0,
+      "source_file": 0
+    },
+    "duplicate_titles": 591,
+    "duplicate_texts": 225,
+    "subjects": {
+      "politicsNews": 11272,
+      "worldnews": 10145
+    },
+    "title_len_mean": 64.667880655554,
+    "text_len_mean": 2383.278517065882,
+    "title_len_median": 64.0,
+    "text_len_median": 2222.0
+  },
+  "combined": {
+    "rows": 44898,
+    "class_balance": {
+      "FAKE": 23481,
+      "REAL": 21417
+    },
+    "duplicate_texts": 6252,
+    "missing_text": 0,
+    "missing_title": 0,
+    "empty_text": 631,
+    "empty_title": 0
+  }
+}
